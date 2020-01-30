@@ -1,0 +1,24 @@
+---
+title: "Welcome, Here I try to explain"
+description: |
+  “In learning you will teach, and in teaching you will learn.” ― Phil Collins
+author:
+  - name: Ramith Hettiarachchi
+    url : https://explain.ramith.fyi
+date: 01-31-2020
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+I first started out writing, on my blog (https://ramith.fyi) back in 2018. I shared articles from electronics to signal processing.
+I dedicate this space to share my experience in learning Machine Learning concepts.
+
+Specifically I'll be explaning certain topics on the book Deep Learning by Ian Goodfellow and Yoshua Bengio and Aaron Courville^[Goodfellow-et-al-2016 https://www.deeplearningbook.org] as I make progress in that book
+
+
+

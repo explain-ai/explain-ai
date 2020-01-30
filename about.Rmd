@@ -1,0 +1,9 @@
+---
+title: "About Explain"
+description: |
+  I write articles, as I understand stuff! :) Hope you'll find it helpful
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```

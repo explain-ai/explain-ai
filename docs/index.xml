@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>Explain</title>
+    <link>https://explain.ramith.fyi</link>
+    <atom:link href="https://explain.ramith.fyi/index.xml" rel="self" type="application/rss+xml"/>
+    <description>Explain
+</description>
+    <generator>Distill</generator>
+    <lastBuildDate>Thu, 30 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Welcome, Here I try to explain</title>
+      <dc:creator>Ramith Hettiarachchi</dc:creator>
+      <link>https://explain.ramith.fyi/posts/2020-01-31-welcome-to-explain-here-i-try-to-explain</link>
+      <description>“In learning you will teach, and in teaching you will learn.” ― Phil Collins</description>
+      <guid>https://explain.ramith.fyi/posts/2020-01-31-welcome-to-explain-here-i-try-to-explain</guid>
+      <pubDate>Thu, 30 Jan 2020 00:00:00 +0000</pubDate>
+    </item>
+  </channel>
+</rss>
