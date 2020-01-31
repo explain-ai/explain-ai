@@ -1,0 +1,86 @@
+---
+title: "6.6 - Historical Notes (Deep Forward Networks"
+description: |
+  A writeup, on the chapter 6.6 - Deep Learning Book[@Goodfellow-et-al-2016]
+author:
+  - name: Ramith Hettiarachchi
+    url : https://explain.ramith.fyi
+date: 2020-01-31
+bibliography: biblio.bib
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# Historical Notes on Deep Feedforward Networks
+
+So by now it is clear that we use feed forward networks as approximations to nonlinear functions.
+And we use gradient descent to minimize the error.
+
+<aside>
+There was an exam question in CS230 - Stanford, "The universal approximation theorem states that a neural network with a single hidden layer can approximate any continuous function (with some assumptions on the activation). Give one reason why you would use deep networks with multiple layers."^[https://cs230.stanford.edu/files/cs230exam_spr18_soln.pdf]
+
+</aside>
+* Chain Rule - (Leibniz, 1676; L'Hopital,1696)
+* Gradient Descent (Cauchy ,1847)
+
+In the 1940's above techniques were used to approximate linear functions (Perceptron) - This couldn't learn XOR.
+
+* To approximate Non-linear functions it was needed to make a multilayer perceptron and most importantly to compute the gradient. 
+First successful experiments with backpropagation was introduced in the book [Parallel Distributed Processing](https://mitpress.mit.edu/books/parallel-distributed-processing-volume-1)[@rumelhart_mcclelland_1986]
+Thanks to this reveal, backpropagation has been popularized. 
+
+Apparently, research on neural networks has reached a peak back in early 1990s. 
+
+<aside>
+I was born after 1997 ¯\\_(ツ)_/¯
+</aside>
+
+Till, the modern deep learning renaissance, different kinds of ml techniques has gained popularity.
+
+As the authors of the Deep Learning book[@Goodfellow-et-al-2016] mentions, 
+
+* The same approaches to gradient descent 
+* Same approach to back propagation is still being used.
+
+Two notable change that has happened would be, the popularity of the cross entropy related loss functions.
+
+### New Error Function
+#### So why cross entropy when we had Mean Squared Error?
+It appaers that, the loss function had been previously suffered from saturation and slow learning
+
+<aside>
+Should think about this sometime.
+</aside>
+
+### Replacement of Sigmoid with piecewise functions 
+Example, Rectified linear units(ReLu).
+
+There are several Pros and Cons when comparing ReLu and Sigmoid, I suggest to read the 219th page[@Goodfellow-et-al-2016].
+It seems there is a scientific reasoning related to our biological neurons with whether rectified linear units.
+
+* Our biological neurons
+  -  For certain inputs, they are completely inactive 
+  -  For some inputs, it's proportional
+  -  Most of the time they exist in inactive state
+
+<aside>
+Should think of some real world examples and add them here
+</aside> 
+
+From 2016 - 2012 most people had thought that it's unrealistic that neural networks will succeed without the help of other probabilistic models. 
+However things have changed today - they perform very well!
+
+<aside>
+Things we believe in today might be wrong in future :) 
+</aside>
+
+As the author mentions,
+back in 2006, the community had used unsupervised learning to support supervised learning. 
+well, now more commonly it's the right opposite.
+
+Let's see how the progress in optimization techniques will change the future of feedforward networks. 
