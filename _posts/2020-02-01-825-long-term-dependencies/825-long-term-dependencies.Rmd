@@ -1,0 +1,60 @@
+---
+title: "8.25 - Long Term Dependencies"
+description: |
+  We are talking about the challenges in Neural Network Optimizations
+author:
+  - name: Ramith Hettiarachchi
+    url : https://explain.ramith.fyi
+date: 02-01-2020
+bibliography: biblio.bib
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+
+### Vanishing Gradient Problem
+
+We know that we fine tune the parameters of a neural network through back-propagation. 
+This involving gradient calculations using the chain rule. Sometimes, these gradients become really small as calculations are done till the lower layers. 
+This results in, lower level gradients nearly unchanged meaning that training doesn't converge to the global optimum.
+
+<aside>
+
+The term back-propagation is often misunderstood as meaning the whole learning algorithm for multi-layer neural networks. Actually, back-propagation refers only to the method for computing the gradient, while another algorithm, such as stochastic gradient descent, is used to perform learning using this gradient. Furthermore, back-propagation is often misunderstood as being specific to multi- layer neural networks, but in principle it can compute derivatives of any function
+(for some functions, the correct response is to report that the derivative of the function is undefined).^[@Goodfellow-et-al-2016]
+</aside>
+
+### What causes this problem? 
+
+In the paper, “Understanding the Difficulty of Training Deep Feedforward Neural Networks", Xavier Glorot and Yoshua Bengio have presented several causes for this. 
+
+* Using the sigmoid activation with a wrong weight initialization method
+
+Logistic activation function saturates to 0 or 1, and at the gradients at those points are very small
+
+>
+~~~~
+* Which of the following activation functions can lead to vanishing gradients?
+(i) ReLU 
+(ii) Tanh
+(iii) Leaky ReLU
+(iv) None of the above
+---
+* You design a fully connected neural network architecture where all 
+activations are sigmoids. 
+You initialize the weights with large positive numbers. 
+Is this a good idea? Explain your answer.
+~~~~
+
+<aside>
+* Ans (ii)
+* Ans : Large W causes Wx to be large. When Wx is large, the gradient is small for sigmoid activation function. Hence, we will encounter the vanishing gradient problem.^[Problem originally included in the papers of this module: https://cs230.stanford.edu]
+</aside>
+
+<i> To be completed</i>

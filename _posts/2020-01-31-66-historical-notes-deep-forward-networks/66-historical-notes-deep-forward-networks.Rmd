@@ -1,5 +1,5 @@
 ---
-title: "Chapter 6.6 - Historical Notes (MLP)"
+title: "6.6 - Historical Notes (MLP)"
 description: |
   A writeup, on the chapter 6.6 - Deep Learning Book[@Goodfellow-et-al-2016]
 author:

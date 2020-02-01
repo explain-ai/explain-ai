@@ -7,9 +7,17 @@
     <description>Explain
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Fri, 31 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 01 Feb 2020 00:00:00 +0000</lastBuildDate>
     <item>
-      <title>Chapter 6.6 - Historical Notes (MLP)</title>
+      <title>8.25 - Long Term Dependencies</title>
+      <dc:creator>Ramith Hettiarachchi</dc:creator>
+      <link>https://explain.ramith.fyi/posts/2020-02-01-825-long-term-dependencies</link>
+      <description>We are talking about the challenges in Neural Network Optimizations</description>
+      <guid>https://explain.ramith.fyi/posts/2020-02-01-825-long-term-dependencies</guid>
+      <pubDate>Sat, 01 Feb 2020 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>6.6 - Historical Notes (MLP)</title>
       <dc:creator>Ramith Hettiarachchi</dc:creator>
       <link>https://explain.ramith.fyi/posts/2020-01-31-66-historical-notes-deep-forward-networks</link>
       <description>A writeup, on the chapter 6.6 - Deep Learning Book[@Goodfellow-et-al-2016]</description>
