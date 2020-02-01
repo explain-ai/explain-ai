@@ -967,7 +967,7 @@
 
 <div class="d-article">
 <h1 id="historical-notes-on-deep-feedforward-networks">Historical Notes on Deep Feedforward Networks</h1>
-<p>So by now it is clear that we use feed forward networks as approximations to nonlinear functions. And we use gradient descent to minimize the error.</p>
+<p>So by now it is clear that we use feed forward networks as approximations to nonlinear functions. And we use gradient descent to minimize the error of these approximations.</p>
 <aside>
 <p>There was an exam question in CS230 - Stanford, “The universal approximation theorem states that a neural network with a single hidden layer can approximate any continuous function (with some assumptions on the activation). Give one reason why you would use deep networks with multiple layers.”<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
 </aside>
@@ -975,7 +975,7 @@
 <li>Chain Rule - (Leibniz, 1676; L’Hopital,1696)</li>
 <li>Gradient Descent (Cauchy ,1847)</li>
 </ul>
-<p>In the 1940’s above techniques were used to approximate linear functions (Perceptron) - This couldn’t learn XOR.</p>
+<p>In the 1940’s above techniques were used to approximate linear functions (Perceptron) - This couldn’t learn XOR. (We need more than one perceptron to realize this)</p>
 <ul>
 <li>To approximate Non-linear functions it was needed to make a multilayer perceptron and most importantly to compute the gradient. First successful experiments with backpropagation was introduced in the book <a href="https://mitpress.mit.edu/books/parallel-distributed-processing-volume-1">Parallel Distributed Processing</a><span class="citation" data-cites="rumelhart_mcclelland_1986">(Rumelhart and McClelland <a href="#ref-rumelhart_mcclelland_1986">1986</a>)</span> Thanks to this reveal, backpropagation has been popularized.</li>
 </ul>
@@ -983,11 +983,11 @@
 <aside>
 I was born after 1997 ¯\<em>(ツ)</em>/¯
 </aside>
-<p>Till, the modern deep learning renaissance, different kinds of ml techniques has gained popularity.</p>
+<p>Till the modern deep learning renaissance, different kinds of ml techniques has gained popularity.</p>
 <p>As the authors of the Deep Learning book<span class="citation" data-cites="Goodfellow-et-al-2016">(Goodfellow, Bengio, and Courville <a href="#ref-Goodfellow-et-al-2016">2016</a>)</span> mentions,</p>
 <ul>
-<li>The same approaches to gradient descent</li>
-<li>Same approach to back propagation is still being used.</li>
+<li>The same approaches to <b>gradient descent </b></li>
+<li>Same approach to <b>back propagation is still being used.</b></li>
 </ul>
 <p>Two notable change that has happened would be, the popularity of the cross entropy related loss functions.</p>
 <h3 id="new-error-function">New Error Function</h3>
@@ -998,7 +998,7 @@ Should think about this sometime.
 </aside>
 <h3 id="replacement-of-sigmoid-with-piecewise-functions">Replacement of Sigmoid with piecewise functions</h3>
 <p>Example, Rectified linear units(ReLu).</p>
-<p>There are several Pros and Cons when comparing ReLu and Sigmoid, I suggest to read the 219th page<span class="citation" data-cites="Goodfellow-et-al-2016">(Goodfellow, Bengio, and Courville <a href="#ref-Goodfellow-et-al-2016">2016</a>)</span>. It seems there is a scientific reasoning related to our biological neurons with whether rectified linear units.</p>
+<p>There are several Pros and Cons when comparing ReLu and Sigmoid, I suggest to read the 219th page<span class="citation" data-cites="Goodfellow-et-al-2016">(Goodfellow, Bengio, and Courville <a href="#ref-Goodfellow-et-al-2016">2016</a>)</span>. It seems there is a scientific reasoning related to our biological neurons with rectified linear units.</p>
 <ul>
 <li>Our biological neurons
 <ul>

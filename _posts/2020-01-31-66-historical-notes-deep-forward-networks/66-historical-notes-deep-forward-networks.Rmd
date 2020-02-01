@@ -19,7 +19,7 @@ knitr::opts_chunk$set(echo = FALSE)
 # Historical Notes on Deep Feedforward Networks
 
 So by now it is clear that we use feed forward networks as approximations to nonlinear functions.
-And we use gradient descent to minimize the error.
+And we use gradient descent to minimize the error of these approximations.
 
 <aside>
 There was an exam question in CS230 - Stanford, "The universal approximation theorem states that a neural network with a single hidden layer can approximate any continuous function (with some assumptions on the activation). Give one reason why you would use deep networks with multiple layers."^[https://cs230.stanford.edu/files/cs230exam_spr18_soln.pdf]
@@ -28,7 +28,7 @@ There was an exam question in CS230 - Stanford, "The universal approximation the
 * Chain Rule - (Leibniz, 1676; L'Hopital,1696)
 * Gradient Descent (Cauchy ,1847)
 
-In the 1940's above techniques were used to approximate linear functions (Perceptron) - This couldn't learn XOR.
+In the 1940's above techniques were used to approximate linear functions (Perceptron) - This couldn't learn XOR. (We need more than one perceptron to realize this)
 
 * To approximate Non-linear functions it was needed to make a multilayer perceptron and most importantly to compute the gradient. 
 First successful experiments with backpropagation was introduced in the book [Parallel Distributed Processing](https://mitpress.mit.edu/books/parallel-distributed-processing-volume-1)[@rumelhart_mcclelland_1986]
@@ -40,12 +40,12 @@ Apparently, research on neural networks has reached a peak back in early 1990s.
 I was born after 1997 ¯\\_(ツ)_/¯
 </aside>
 
-Till, the modern deep learning renaissance, different kinds of ml techniques has gained popularity.
+Till the modern deep learning renaissance, different kinds of ml techniques has gained popularity.
 
 As the authors of the Deep Learning book[@Goodfellow-et-al-2016] mentions, 
 
-* The same approaches to gradient descent 
-* Same approach to back propagation is still being used.
+* The same approaches to <b>gradient descent </b>
+* Same approach to <b>back propagation is still being used.</b>
 
 Two notable change that has happened would be, the popularity of the cross entropy related loss functions.
 
@@ -61,7 +61,7 @@ Should think about this sometime.
 Example, Rectified linear units(ReLu).
 
 There are several Pros and Cons when comparing ReLu and Sigmoid, I suggest to read the 219th page[@Goodfellow-et-al-2016].
-It seems there is a scientific reasoning related to our biological neurons with whether rectified linear units.
+It seems there is a scientific reasoning related to our biological neurons with rectified linear units.
 
 * Our biological neurons
   -  For certain inputs, they are completely inactive 
