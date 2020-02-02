@@ -22,5 +22,4 @@ Specifically I'll be explaning certain topics on the book Deep Learning by Ian G
 
 These notes might be work in progress, and are intended to be used for quick reference purposes. 
 
-
-
+![](img.png)
