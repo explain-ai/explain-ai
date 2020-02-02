@@ -1,5 +1,20 @@
 [
   {
+    "path": "posts/2020-02-03-43-gradient-based-optimization/",
+    "title": "4.3 Gradient Based Optimization",
+    "description": "A short description of the post.",
+    "author": [
+      {
+        "name": "Ramith Hettiarachchi",
+        "url": "https://explain.ramith.fyi"
+      }
+    ],
+    "date": "2020-02-03",
+    "categories": [],
+    "preview": {},
+    "last_modified": "2020-02-03T02:09:52+05:30"
+  },
+  {
     "path": "posts/2020-02-01-825-long-term-dependencies/",
     "title": "8.25 - Long Term Dependencies",
     "description": "We are talking about the challenges in Neural Network Optimizations",

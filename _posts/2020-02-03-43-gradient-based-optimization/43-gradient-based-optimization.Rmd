@@ -1,0 +1,59 @@
+---
+title: "4.3 Gradient Based Optimization"
+description: |
+  A short description of the post.
+author:
+  - name: Ramith Hettiarachchi
+    url : https://explain.ramith.fyi
+date: 02-03-2020
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+During the training stage of a model, what we do is design an error function of some sort and try to minimize the that error. So how to we minimize? Let's find out.
+
+<aside>
+Cost Function, Loss Function, Error Function all mean the same thing.
+</aside>
+
+Let's say we have a function $y=f(x)$. What the derivative $f'(x)$ tells us is that, how much of an increase in f(x) is given for a small increase in x. So to minimize $f(x)$ what do we need to do? We need to move in the direction of the opposite sign of the derivative. 
+So what if $f'(x)=0$? Then either we have found a maxima, minima or a saddle point. 
+
+If we talk about minima, our goal in minimizing the error function would be to reach a global minima. 
+
+<aside>
+There can be one or more global minima. Also there can be a local minima which isn't the global minima.
+</aside>
+
+Uptill now, we talked about $f(x)$ - a function with one variable -> x. In the case of a model, we deal with vast number of variables(features). Thus, to detect in which direction a function minimizes, we need to consider partial derivatives w.r.t to each variable.  $\frac{\partial f(x)}{\partial x_i}$
+
+The gradient of $f$ is defined as the vector containing all the partial derivatives.
+$$  \nabla_x f(x)$$
+
+<aside>
+Element i of the gradient is the partial derivative of f w.r.t $x_i$
+</aside>
+
+Generalizing to multiple dimensions, critical points happen when every element of the gradient is zero.
+
+### Directional Derivative
+
+We know that each element of the gradient shows the derivative in the direction of that element. Therefore to get the derivative in an arbitrary direction $u$, we have,
+$$  u^\intercal \nabla_x f(x)$$
+
+Going with our previous intiuitive example, in order to see the direction in which the function decreases the most,
+
+$$\min_{u,u^\intercal u=1} u^\intercal \nabla_x f(x)$$
+<aside>
+u is a unit vector.
+</aside>
+
+
+```
+To be continued...
+```
